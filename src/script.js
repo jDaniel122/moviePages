@@ -36,6 +36,7 @@ $(document).ready(function() {
             </div>`);
         });
     };
+    //prueba cambios
     // Función para mostrar los detalles de una película
     // Obtener el ID de la película de la URL
     var queryString = window.location.search;
