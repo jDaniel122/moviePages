@@ -15,22 +15,25 @@ $(document).ready(function() {
         //movieList.empty();
 
         $.each(movies, function(index, movie) {
-            movieList.append('<div class="col-md-4 mb-4"><div class="card"><div class="card-body"><h5 class="card-title">' + movie.title + '</h5> <img src="'+ movie.img +'"></img><p class="card-text">' + movie.year + '</p><a href="movie_detail.html" class="btn btn-primary stretched-link">Ver Detalles</a></div></div></div>');
+            movieList.append('<div class="col-md-4 mb-4"><div class="card"><div class="card-body"><h5 class="card-title">' + movie.title + '</h5> <img style="height: 350px; width: 300px;"src="'+ movie.img +'"></img><p class="card-text">' + movie.resena + '</p><a href="movie_detail.html?id='+ movie.id +'" class="btn btn-primary stretched-link">Ver Detalles</a></div></div></div>');
         });
     };
     // Función para mostrar los detalles de una película
-    function displayMovieDetails() {
-        var movieDetails = $('#movieDetails');
-        // Obtener el ID de la película de la URL (simulado)
-        var movieId = 1; // Simulación: obtén el ID de la película de la URL
-        var movie = movies[movieId];
-        movieDetails.empty();
-        movieDetails.append('<h2>' + movie.title + '</h2><p>Año: ' + movie.year + '</p><p>Director: ' + movie.director + '</p><p>Sinopsis: ' + movie.synopsis + '</p>');
-    };
+    // Obtener el ID de la película de la URL
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    var movieId = urlParams.get('id');
+    // Usar el ID de la película para obtener la información de la película correspondiente
+    var movie = movies.find(function(movie) {
+        return movie.id === parseInt(movieId);
+    });
+    // Mostrar los detalles de la película en la página
+    if (movie) {
+        // Aquí puedes mostrar la información de la película en la página, por ejemplo:
+        $('#movieDetails').append('<h2>' + movie.title + '</h2><p>Sipnosis: ' + movie.sipnosis + '</p><p>Actores: ' + movie.actores.join(', ') + '</p>');
+    } else {
+        $('#movieDetails').append('<p>La película no se encontró.</p>');
+    }
     // Mostrar lista de películas en la página inicial
     displayMovies();
-    // Mostrar detalles de película al hacer clic en "Ver Detalles"
-    $('#movieList').on('click', '.btn', function() {
-        displayMovieDetails();
-    });
 });
