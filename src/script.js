@@ -9,12 +9,12 @@ let arrayDescription = [
 ];
 //Arreglo information de peliculas
 var movies = [
-    { id: 1, title: "Gato con botas", resena: "El Gato con Botas, con solo una vida restante debido a su amor por la aventura, busca desesperadamente al Último Deseo para recuperar las vidas perdidas.", sipnosis: "En El Gato con Botas el astuto felino busca desesperadamente al Último Deseo para recuperar las vidas perdidas debido a sus aventuras.", actores: ["Antonio Banderas", "Salma Hayek"], img: "../public/img/cartelera/gato_con_botas.jpg", description: arrayDescription[0]},
-    { id: 2, title: "Exorcista", resena: "El Exorcista sigue la historia de una niña poseída y los intentos de un sacerdote por exorcizarla. Es un clásico del cine de terror.", sipnosis: "En El Exorcista, una niña es poseída por un demonio y un sacerdote realiza un exorcismo para salvarla. La película es conocida por su intensidad y se ha convertido en un clásico del cine de terror.", actores: [], img: "../public/img/cartelera/exorcista.jpg", description:arrayDescription[1] },
-    { id: 3, title: "Intensa Mente", resena: "Intensa Mente 2 sigue las aventuras emocionales de Riley mientras crece, con Joy, Tristeza, Ira, Miedo y Asco, sus emociones, ayudándola a navegar por la adolescencia. Ofrece una mirada conmovedora y entretenida sobre el crecimiento personal y la amistad en el mundo de la mente humana.", sipnosis: "Intensa Mente 2 sigue a Riley mientras crece y enfrenta desafíos de la adolescencia, con sus emociones guiándola. Ofrece una perspectiva entretenida sobre el crecimiento personal y la importancia de las emociones.", actores: ["Amy Poehier","Tony Hale"], img: "../public/img/cartelera/intensaMente.jpg", description:arrayDescription[2] },
-    { id: 4, title: "Mario Bros", resena: "La película de Mario Bros. sigue a Mario y Luigi en su misión para rescatar a la princesa Peach del malvado Rey Koopa en el Reino Champiñón.", sipnosis: "La película de Mario Bros. sigue a los fontaneros Mario y Luigi en su aventura para rescatar a la princesa Peach del malvado Rey Koopa en el Reino Champiñón.", actores: ["Chris Pratt","Jack Black"], img: "../public/img/cartelera/mario.jpg", description:arrayDescription[3] },
-    { id: 5, title: "La Monja", resena: "La Monja es una película de terror en la que un sacerdote y una joven monja investigan un suicidio en un monasterio rumano, encontrándose con una presencia demoníaca que los atormenta.", sipnosis: "La Monja sigue a un sacerdote y una joven monja que investigan un suicidio en un monasterio rumano, donde se enfrentan a una presencia demoníaca aterradora.", actores: ["Taissa Farmiga","Bonnie Aarons"], img: "../public/img/cartelera/monja.jpg", description: arrayDescription[4]},
-    { id: 6, title: "Proyecto X", resena: "Proyecto X es una película sobre tres amigos que organizan una fiesta masiva, desencadenando el caos cuando miles de personas asisten.", sipnosis: "Proyecto X sigue a tres amigos de la escuela secundaria que organizan una fiesta que rápidamente se sale de control cuando miles de personas asisten, desatando el caos en su vecindario.", actores: ["Dax Flame","Miles Teller","Oliver Cooper"], img: "../public/img/cartelera/proyectox.jpg", description: arrayDescription[5]},
+    { id: 1, title: "Gato con botas", resena: "El Gato con Botas, con solo una vida restante debido a su amor por la aventura, busca desesperadamente al Último Deseo para recuperar las vidas perdidas.", sipnosis: "En El Gato con Botas el astuto felino busca desesperadamente al Último Deseo para recuperar las vidas perdidas debido a sus aventuras.", actores: ["Antonio Banderas", "Salma Hayek"], img: "../public/img/cartelera/gato_con_botas.jpg", description: arrayDescription[0], genero:"Infantil"},
+    { id: 2, title: "Exorcista", resena: "El Exorcista sigue la historia de una niña poseída y los intentos de un sacerdote por exorcizarla. Es un clásico del cine de terror.", sipnosis: "En El Exorcista, una niña es poseída por un demonio y un sacerdote realiza un exorcismo para salvarla. La película es conocida por su intensidad y se ha convertido en un clásico del cine de terror.", actores: [], img: "../public/img/cartelera/exorcista.jpg", description:arrayDescription[1] ,genero:"Terror"},
+    { id: 3, title: "Intensa Mente", resena: "Intensa Mente 2 sigue las aventuras emocionales de Riley mientras crece, con Joy, Tristeza, Ira, Miedo y Asco, sus emociones, ayudándola a navegar por la adolescencia. Ofrece una mirada conmovedora y entretenida sobre el crecimiento personal y la amistad en el mundo de la mente humana.", sipnosis: "Intensa Mente 2 sigue a Riley mientras crece y enfrenta desafíos de la adolescencia, con sus emociones guiándola. Ofrece una perspectiva entretenida sobre el crecimiento personal y la importancia de las emociones.", actores: ["Amy Poehier","Tony Hale"], img: "../public/img/cartelera/intensaMente.jpg", description:arrayDescription[2],genero:"Infantil" },
+    { id: 4, title: "Mario Bros", resena: "La película de Mario Bros. sigue a Mario y Luigi en su misión para rescatar a la princesa Peach del malvado Rey Koopa en el Reino Champiñón.", sipnosis: "La película de Mario Bros. sigue a los fontaneros Mario y Luigi en su aventura para rescatar a la princesa Peach del malvado Rey Koopa en el Reino Champiñón.", actores: ["Chris Pratt","Jack Black"], img: "../public/img/cartelera/mario.jpg", description:arrayDescription[3],genero:"Infantil" },
+    { id: 5, title: "La Monja", resena: "La Monja es una película de terror en la que un sacerdote y una joven monja investigan un suicidio en un monasterio rumano, encontrándose con una presencia demoníaca que los atormenta.", sipnosis: "La Monja sigue a un sacerdote y una joven monja que investigan un suicidio en un monasterio rumano, donde se enfrentan a una presencia demoníaca aterradora.", actores: ["Taissa Farmiga","Bonnie Aarons"], img: "../public/img/cartelera/monja.jpg", description: arrayDescription[4],genero:"Terror"},
+    { id: 6, title: "Proyecto X", resena: "Proyecto X es una película sobre tres amigos que organizan una fiesta masiva, desencadenando el caos cuando miles de personas asisten.", sipnosis: "Proyecto X sigue a tres amigos de la escuela secundaria que organizan una fiesta que rápidamente se sale de control cuando miles de personas asisten, desatando el caos en su vecindario.", actores: ["Dax Flame","Miles Teller","Oliver Cooper"], img: "../public/img/cartelera/proyectox.jpg", description: arrayDescription[5],genero:"Comedia"},
 ];
 //Nombres y apellidos para los comentarios
 const nombres = ["Juan", "María", "Pedro", "Luisa", "Andrés", "Laura", "Carlos", "Ana", "Diego", "Sofía"];
@@ -103,4 +103,39 @@ $(document).ready(function() {
         </div>`;
         $("#comentarios").append(estrHtml);
     });
+    // Función para mostrar las películas según el género seleccionado
+    
+    function displayMoviesByGenre() {
+        // Seleccionar el elemento de selección de género
+        $('#selectGenero').on('change', function() {
+            var valorSelect = $(this).val(); // Obtener el valor seleccionado del elemento de selección
+            var movieList = $('#movieList');
+            console.log(valorSelect);
+            // Limpiar el contenedor de películas antes de agregar nuevas tarjetas
+            movieList.empty();
+            // Filtrar las películas según el género seleccionado
+            var peliculasFiltradas = (valorSelect === "todos") ? movies : movies.filter(function(movie) {
+                return movie.genero === valorSelect;
+            });
+            console.log(peliculasFiltradas);
+            // Mostrar las tarjetas de las películas filtradas
+            $.each(peliculasFiltradas, function(index, movie) {
+                movieList.append(
+                    `<div class="col-md-4 mb-4">
+                        <a href="movie_detail.html?id=${movie.id}" class="btn btn-primary stretched-link">
+                            <div class="card" style="width: 350px; height: 700px;">
+                                <div class="card-body">
+                                    <img src="${movie.img}" class="card-img-top img-fluid"></img>
+                                    <hr>
+                                    <p class="card-text">${movie.sipnosis}</p>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>`
+                );
+            });
+        });
+    }
+    // Mostrar todas las películas al cargar la página
+    displayMoviesByGenre()
 });
