@@ -47,6 +47,7 @@ $(document).ready(function() {
             );
         });
     };
+    //prueba cambios
     //PAGINA PARA DETALLES DE PELICULAS
     // Obtener el ID de la película de la URL
     var queryString = window.location.search;
