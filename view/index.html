@@ -9,21 +9,30 @@
     </head>
     <body>
         <div class="container">
-            <div class="logo text-center">
-                <a href="../view/index.html">
-                    <img src="../public/img/logo/1.png">
-                </a>
-            </div>
-            <div id = "busqueda">
-                <label for="selectGenero" class="form-label">Selecciona un género:</label>
-                <select class="form-select" id="selectGenero">
-                    <option value="todos">Todos los géneros</option>
-                    <option value="Infantil">Infantil</option>
-                    <option value="Comedia">Comedia</option>
-                    <option value="Terror">Terror</option>
-      <!-- Agrega más opciones de género según sea necesario -->
-                </select>
-            </div>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="Logo_text_center" href="../view/index.html">
+                        <img src="../public/img/logo/1.png" alt="Logo" width="100" height="89" class="d-inline-block align-text-top">
+                    </a>
+                        <a class="navbar-brand" href="../view/index.html">Inicio</a>
+                    
+                  <div id = "busqueda">
+                    <label for="customRange1" class="form-label">Generos:</label>
+                    <select class="form-select" id="selectGenero"aria-label="Disabled select example"  >
+                        <option value="todos">Todos los géneros</option>
+                        <option value="Infantil">Infantil</option>
+                        <option value="Comedia">Comedia</option>
+                        <option value="Terror">Terror</option>
+                    </select>
+                </div>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg></button>
+                  </form>
+                </div>
+            </nav>
             <hr>
             <div id="movieList" class="row justify-content-center">
             </div>
@@ -56,7 +65,6 @@
     a{
         text-decoration: none;
     }
-    
 
     
 </style>
