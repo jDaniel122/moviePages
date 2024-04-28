@@ -97,15 +97,15 @@ $(document).ready(function() {
                 }
             </style>
             <div class="row">
-                <div class="col-12 text-center mt-5 mb-4">
+                <div class="col-12 mt-5 mb-4">
                     <h2>${movie.title}</h2>
                     <hr>
                 </div>
-                <div class="col-12 text-center mt-5 mb-4">
+                <div class="col-12 mt-5 mb-4">
                     <h2>Descripcion</h2>
                     <p>${movie.description}</p>
                 </div>
-                <div class="col-12 text-center mt-5 mb-4">
+                <div class="col-12 mt-5 mb-4">
                     <h2>Actores</h2>
                     <div class = "wrapper">
                         <div class = "item">
@@ -114,7 +114,8 @@ $(document).ready(function() {
                         </div>
                     </div>
                 </div>
-            </div>`       
+            </div>
+            `       
         );
     } 
     else {
