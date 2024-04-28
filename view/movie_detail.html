@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Descripcion de pelicula</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../public/css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="logo text-center">
-                <a href="../view/index.html">
-                    <img src="../public/img/logo/1.png">
-                </a>
-            </div>
-            <h1 class="text-center mt-5 mb-4">Detalles de la Película</h1>
-            <div class="movie-details" id="movieDetails"> 
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mt-5 mb-4">
-                    <h2>Comentarios</h2>
-                    <form>
-                        <input type="text" class="form-control" name="" id="miInput" placeholder="Que opina de la pelicula?? " "">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción de película</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            color: white;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+        #comentarios {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #222;
+        }
+        .wrapper {
+            max-height: 120px;
+            border: 1px solid #ddd;
+            display: flex;
+            overflow-x: auto;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+        .wrapper .item {
+            min-width: 110px;
+            height: 110px;
+            line-height: 110px;
+            text-align: center;
+            background-color: #ddd;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo text-center mt-4">
+            <a href="../view/index.html">
+                <img src="../public/img/logo/1.png">
+            </a>
+        </div>
+        <h1 class="text-center mt-5 mb-4">Detalles de la Película</h1>
+        <div class="movie-details" id="movieDetails">
+        </div>
+        <div class="row justify-content-center mt-5 mb-4">
+            <div class="col-md-6 text-center">
+                <h2>Comentarios</h2>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="" id="miInput" placeholder="¿Qué opinas de la película?">
+                    <div class="input-group-append">
                         <input type="submit" id="registerComment" class="btn btn-primary" value="Enviar">
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mt-5 mb-4" id="comentarios">
+                    </div>
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="../src/script.js"></script>
-    </body>
+        <div class="row justify-content-center mt-5 mb-4">
+            <div class="col-md-6 text-center" id="comentarios">
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../src/script.js"></script>
+</body>
 </html>
-<style>
-    body{
-        color: white;
-        background-color: black;
-    }
-    .wrapper{
-        max-height: 120px;
-        border: 1px solid #ddd;
-        display: flex;
-        overflow-x: auto;
-    }
-    .wrapper .item{
-        min-width: 110px;
-        height: 110px;
-        line-height: 110px;
-        text-align: center;
-        background-color: #ddd;
-    }
-</style>
