@@ -1,12 +1,3 @@
-//Estren pelis
-var estrenPelis = [
-    {id : 1 , title : "El reino del planeta de los simios"},
-    {id : 2 , title : "Joker 2"},
-    {id : 3 , title : "Pobres criaturas"},
-    {id : 4 , title : "Deadpool 3"},
-    {id : 5 , title : "Beetlejuice 2"},
-    {id : 6 , title : "Venom 3"},
-];
 //Arreglo description de peliculas
 let arrayDescription = [
     "El Gato con Botas es un personaje astuto y valiente de cuentos de hadas, conocido por su habilidad para resolver problemas y su destreza en la caza de ratones. Siempre lleva botas y un sombrero con plumas, y es famoso por su ingenio y astucia.",
@@ -36,31 +27,18 @@ function generarNombreAleatorio() {
 }
 //Inicio y uso de Jquery
 $(document).ready(function() {
-    //Funcion estrenos
-    function estren() {
-        var movieEstren = $('.containerEstren');
-        $.each (estrenPelis, function(index, estren) {
-            movieEstren.append(
-                `<input type="radio" name="slide" id="c${estren.id}" checked>
-                <label for="c${estren.id}" class="card">
-                    <div class="row">
-                        <div class="icon">${estren.id}</div>
-                        <div class="description">
-                            <h4>Winter</h4>
-                            <p>${estren.title}</p>
-                        </div>
-                    </div>
-                </label>`
-            );
-        });
-    };
-    // Función para mostrar la lista de películas en la página inicial
-    //PAGINA PARA LISTADO DE PELICULAS
+    //Función para mostrar la lista de películas en la página inicial
     function displayMovies() {
         var movieList = $('#movieList');
         $.each (movies, function(index, movie) {
             movieList.append(
-                `<div class="col-md-4 mb-4">
+                `<style>
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    };
+                </style>
+                <div class="col-md-4 mb-4">
                     <a href="movie_detail.html?id=${movie.id} class="btn btn-primary stretched-link">
                         <div class="card" style="width: 350px; height: 700px;">
                             <div class="card-body">
@@ -74,7 +52,8 @@ $(document).ready(function() {
             );
         });
     };
-    //prueba cambios
+    // Mostrar lista de películas en la página inicial
+    displayMovies();
     //PAGINA PARA DETALLES DE PELICULAS
     // Obtener el ID de la película de la URL
     var queryString = window.location.search;
@@ -119,11 +98,9 @@ $(document).ready(function() {
         );
     } 
     else {
+        //Si no se encuetra pelicula
         $('#movieDetails').append('<p>La película no se encontró.</p>');
     }
-    // Mostrar lista de películas en la página inicial
-    displayMovies();
-    estren();
     //Comentarios pagina de DESCRIPTION
     $("#registerComment").on("click", function(e){
         e.preventDefault();
@@ -137,25 +114,28 @@ $(document).ready(function() {
         </div>`;
         $("#comentarios").append(estrHtml);
     });
-    // Función para mostrar las películas según el género seleccionado    
+    //Función para mostrar las películas según el género seleccionado    
     function displayMoviesByGenre() {
-        // Seleccionar el elemento de selección de género
         $('#selectGenero').on('change', function() {
-            var valorSelect = $(this).val(); // Obtener el valor seleccionado del elemento de selección
+            var valorSelect = $(this).val(); //Obtener el valor seleccionado del elemento de selección
             var movieList = $('#movieList');
-            console.log(valorSelect);
-            // Limpiar el contenedor de películas antes de agregar nuevas tarjetas
+            //Limpiar el contenedor de películas antes de agregar nuevas tarjetas
             movieList.empty();
             // Filtrar las películas según el género seleccionado
             var peliculasFiltradas = (valorSelect === "todos") ? movies : movies.filter(function(movie) {
                 return movie.genero === valorSelect;
             });
-            console.log(peliculasFiltradas);
             // Mostrar las tarjetas de las películas filtradas
             $.each(peliculasFiltradas, function(index, movie) {
                 movieList.append(
-                    `<div class="col-md-4 mb-4">
-                        <a href="movie_detail.html?id=${movie.id}" class="btn btn-primary stretched-link">
+                    `<style>
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        };
+                    </style>
+                    <div class="col-md-4 mb-4">
+                        <a href="movie_detail.html?id=${movie.id} class="btn btn-primary stretched-link">
                             <div class="card" style="width: 350px; height: 700px;">
                                 <div class="card-body">
                                     <img src="${movie.img}" class="card-img-top img-fluid"></img>
@@ -170,5 +150,5 @@ $(document).ready(function() {
         });
     }
     // Mostrar todas las películas al cargar la página
-    displayMoviesByGenre()
+    displayMoviesByGenre();
 });

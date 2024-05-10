@@ -1,0 +1,86 @@
+[33mcommit ff4252d4d771415dec7e8564d77bbb0f5c62af63[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 787cbf1 c8624e2
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Sat Apr 27 22:34:25 2024 -0500
+
+    Se
+
+[33mcommit 787cbf15bda8ea3c28e81aeea96a2f276fc56381[m
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Sat Apr 27 22:11:38 2024 -0500
+
+    se implemento imagen backg para description
+
+[33mcommit c8624e20ceb81073994b829d561416a031863566[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Harold <haroldavid2006@gmail.com>
+Date:   Sat Apr 27 21:01:37 2024 -0500
+
+    Se suben cambios de la barra de navegacion
+
+[33mcommit 003c0d0a87400a65c1d685acf75e06af9095ed29[m
+Merge: 5c65d46 1fdb28d
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Sat Apr 27 18:01:34 2024 -0500
+
+    Merge branch 'main' of https://github.com/jDaniel122/moviePages
+
+[33mcommit 5c65d465b20c01ffd6adf9a7ad12c5a6a5aa49b8[m
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Sat Apr 27 18:01:30 2024 -0500
+
+    implementacion de mejora visual
+
+[33mcommit 1fdb28d569eeb75263922990159bba12ee6da899[m
+Author: Harold <haroldavid2006@gmail.com>
+Date:   Sat Apr 27 17:59:10 2024 -0500
+
+    Se implemento filtro FUNCIONAL
+
+[33mcommit 5a62e6a1217794929df728ef8e30b78045baaccb[m
+Merge: 262cd78 8684153
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Sat Apr 27 15:01:33 2024 -0500
+
+    arreglo de conflicto
+
+[33mcommit 262cd78842b876c461f4e416050b07f8bf2c135b[m
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Sat Apr 27 14:57:49 2024 -0500
+
+    Implementacion de comentarios y algo de diseno
+
+[33mcommit 86841533c1ae75741a4ee44b2133e8778a2e9f86[m
+Author: Harold <haroldavid2006@gmail.com>
+Date:   Sat Apr 27 01:10:53 2024 -0500
+
+    Comentarios
+
+[33mcommit 6727343ef969b3adb39ba625891d5225c5821cd9[m
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Sat Apr 27 01:00:45 2024 -0500
+
+    Se inserto detalles de peliculas
+
+[33mcommit 61b03bff71da481e0dc1f7037636405283241bb7[m
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Fri Apr 26 21:45:19 2024 -0500
+
+    funcionamineto de descripcion
+
+[33mcommit 2263e06d44537fd9a324c5cfd05c1ac0594c3a13[m
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Thu Apr 25 00:19:58 2024 -0500
+
+    se ajusto la mitad de la logica js
+
+[33mcommit 90a46dd05fabaeb2c228325584785ddd1024a534[m
+Author: Harold <haroldavid2006@gmail.com>
+Date:   Wed Apr 24 23:36:30 2024 -0500
+
+    Se suben imagenes
+
+[33mcommit ddcaccbc47889a386e4183bf3fc84503e4229268[m
+Author: juan <jdrarevalo2023@gmail.com>
+Date:   Wed Apr 24 23:05:22 2024 -0500
+
+    se crea MVC
