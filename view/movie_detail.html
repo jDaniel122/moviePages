@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descripción de película</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/movieDetail.css">
 </head>
 <body>
     <nav class="navbar bg-body-tertiary">
@@ -12,17 +13,20 @@
             <a class="Logo_text_center" href="../view/index.html">
                 <img src="../public/img/logo/1.png" alt="Logo" width="100px" height="50px" class="d-inline-block align-text-top">
             </a>
-            <a class="navbar-brand" href="../view/index.html">Inicio</a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg></button>
-          </form>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
+                </button>
+            </form>
         </div>
     </nav>
     <div class="container">
-        <div class="movie-details" id="movieDetails">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="movie-details" id="movieDetails">
+                </div>
+            </div>
         </div>
         <div class="row justify-content-center mt-5 mb-4">
             <div class="col-md-6 text-center">
